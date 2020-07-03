@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body_block %}
+{% load static %}
+<style>
+body{
+     background: url("{% static 'blog/images/contactsus.jpg' %}") no-repeat center center fixed;
+     background-size: cover; 
+    }
+.container{
+        margin:100px auto;
+        text-align:center
+}
+</style>
+<div class="container" style="">
+    <h1>Thanks for contacting us</h1>
+</div>
+{% endblock %}

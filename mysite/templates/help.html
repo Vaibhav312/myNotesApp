@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+<style>
+body{
+     background: url("{% static 'blog/images/help.jpg' %}") no-repeat center center fixed; 
+     background-size: cover;
+    }
+</style>
+<div class="container" id="help_container" >
+
+ 
+            <h2>Steps to use this website:</h2>
+                <p class="steps">Step1: Signing Up</p>
+                <p class="steps_details">Click on the 'SignUp' button. After filling the SignUp form, you'll be redirected to the main page.</p>
+                
+                <p class="steps">Step2: Loggin In</p>
+                <p class="steps_details">Click on the 'Login' link on the navigation bar and enter your email id and password respectively. Click on 'Login' button.</p>
+                
+                <p class="steps">Step3: My Notes</p>
+                <p class="steps_details">I- Click on 'Add Note'.</p>
+                <p class="steps_details">II- Click 'Edit' to edit your notes.</p>
+                <p class="steps_details">III- Click 'Delete' to delete your notes.</p>
+                <p class="steps_details">IV- Click 'All Notes' to see your all saved notes.</p>
+                
+                
+                <p class="steps">User</p>
+                <p class="steps_details">Check your username here.</p>
+                
+                
+                <p class="steps">Contact Us</p>
+                <p class="steps_details">Click on 'Contact Us' tab to ask any query or to give any complaints/suggestions.</p>
+        
+
+            
+
+    </div>
+{% endblock %}

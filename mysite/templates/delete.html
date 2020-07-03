@@ -1,0 +1,10 @@
+{% extends 'mainpageloggedin.html' %}
+{% load crispy_forms_tags %}
+{% block body_block %}
+    <form  method="POST">
+        {% csrf_token %}
+      <input type="submit" name="" value="Confirm" class="btn btn-danger float-right">
+
+            </form>     
+  
+{% endblock  %}
