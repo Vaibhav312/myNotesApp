@@ -3,18 +3,15 @@
 {% load static %}
 {% block body_block %}
 <style>
-#base_container{
+body{
      background: url("{% static 'blog/images/contactsus.jpg' %}") no-repeat center center fixed; 
      background-size: cover;
   
     }
-.container{
-      margin-bottom:20px;
-      padding:20px 200px;
-}
+
 </style>
 
-  <div class="container" style="" >
+  <div class="container" style="padding-top:20px" >
         <h3 style="text-align:center;" class="text_clicked">Just fill out the form.</h3>
 
         <form  method="POST">

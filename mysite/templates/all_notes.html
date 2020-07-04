@@ -1,7 +1,7 @@
 {% extends 'mainpageloggedin.html' %}
 {% load crispy_forms_tags %}
 {% block body_block %}
-<div class="container" style="margin:20px;">
+<div class="container" style="margin:30px auto;">
             <div class="row">
                 <div class="container">
                     <div class="mainbuttons">
@@ -25,10 +25,11 @@
                             <p> {{ value.add_notes|linebreaks }}</p>
                         
                             <a href="{% url 'update_task' value.id %}" class="btn btn-primary" >Update</a>
-    <!--------Modal-------------------------------------------------------------------------------------------------->                        
+    <!--------Modal-------------------------------------------------------------------------------------------------->   
+
                             <a data-toggle="modal" data-target="#fm-modal-grid" class="btn btn-primary float-right temp1" id="{{value.id}}" style="color:white"  >Delete</a>
                                 <div class="modal fade" id="fm-modal-grid" tabindex="-1" role="dialog" aria-labelledBy="fm-modal-grid" aria-hidden="true">
-                                    <div class="modal-dialog modal-md">
+                                    <div class="modal-dialog modal-md" id="modal">
                                         <div class="modal-content">
                                             <div class="modal-header bg-light">
                                                 <h5 class="modal-title">Delete Confirmation</h5>
